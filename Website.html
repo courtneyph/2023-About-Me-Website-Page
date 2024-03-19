@@ -1,0 +1,92 @@
+<head>          
+  <title> Courtney Pham</title>  
+  <link rel="stylesheet" href="website.css">
+  <link rel="icon" href="letter-c.jpg" type="image">
+  <meta name = "viewport"
+  content="width=device-width, initial-scale=1.0">  
+
+</head>
+<body> 
+    <img src="http://www.csc.lsu.edu/~qywang/CS2610/LSU_logo.png" width="200" alt="LSU Logo" 
+    style="max-width:100%;height:auto;">
+<p>
+    <br> <br> <h1>About Courtney Pham </h1>
+     <h2> Courses Taken:</h2>
+     <ul>
+      <li> CSC 1350 - Intro to Computer Science I for Majors</li>
+      <li> CSC 1351 - Intro to Computer Science II for Majors</li>
+      <li> CSC 2259 - Discrete Structures</li>
+     </ul>
+     <h4> Courses In Progress:</h4>
+     <ul>
+      <li> CSC 3102 - Advanced Data Structures</li>
+      <li> CSC 2610 - Intro to Cloud Computing and Web Programming</li>
+      <li> CSC 2362 - Intro to Cybersecurity</li>
+     </ul>
+     <h2> Skills:</h2>
+     <p>
+    I am proficient in Java, as it is my main coding languauge at the time. I am currently
+    learning JavaScript, CSS, and HTML. 
+     </p>
+  
+     <script>
+      var img = document.getElementsByTagName('img')[0];
+img.style.position = 'absolute';
+img.style.left = '0px';
+
+function LSU() {
+    var oldLeft = parseInt (img.style.left);
+    var newLeft = oldLeft + 20;
+    if (newLeft >= window.innerWidth) {
+        img.style.left = '0px';  // Reset to the left when it reaches the right
+    } else {
+        img.style.left = newLeft + 'px';
+    }
+}
+window.setInterval(LSU, 100);
+
+     </script>
+    </p>
+   
+    <h3>Contact Me</h3>
+    <form id="formid" class="formclass" method="post" action="contact-form-process.php">
+            <label for="Name" class="form-label">Your name</label>
+            <div class="input">
+                <input type="text" id="Name" name="Name" class="formcontrol" required>
+            </div>
+        <div class="formgroup">
+            <label for="Email" class="form-label">Your email address</label>
+            <div class="input">
+                <input type="email" id="Email" name="Email" class="formcontrol" required>
+            </div>
+            <div> 
+                <label for="contact reason">Contact Reason</label>
+                <select id="contact reason" name="contact reason">
+                  <option value="fun">Fun</option>
+                  <option value="help">Help</option>
+                  <option value="Question">Question</option>
+                </select></div>
+        <div class="formgroup">
+            <label for="Message" class="form-label">Your message</label>
+            <div class="input">
+                <textarea id="Message" name="Message" class="formcontrol" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="formgroup">
+            <button type="submit" id="form-button" class="form-button">Send</button>
+    </div>
+    
+            <input type="checkbox" id="updates" name="updates" value="signupforupdates">
+            <label for="updates">Join For Updates!</label><br>
+        </div>
+        <p> Or you can just look below and contact me personally!</p>
+     
+         <h2 id="contact">My Contact Information</id></h2>
+
+         <ul>
+             <li>Email: <a href="mailto:courtneympham@gmail.com">courtneympham@gmail.com</a></li>
+             <li>Github: <a href="https://github.com/courtneyph">https://github.com/courtneyph</a></li>
+             <li>Phone: 225-715-2773</li>
+         </ul>
+     
+</body>

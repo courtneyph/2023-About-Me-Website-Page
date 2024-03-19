@@ -1,0 +1,21 @@
+body {
+    font-family:'Sans-serif', Veranda;
+    background-color:lavender;
+}
+h1 { 
+    text-align: center; 
+    color:black;
+}
+h2 {
+    color: darkorchid;
+}
+h4 {
+    color: darkorchid;
+}
+h3{
+    font-size: 2em;
+    text-align: center;
+}
+form {
+    border: 5px solid black;
+}
